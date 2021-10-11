@@ -11,7 +11,7 @@ public class ThreadPoolApp {
             if ((numberOfJobs < 1) || (numberOfThreads < 1))
                 ThreadPoolApp.error();
             ExecutorService pool = Executors.newFixedThreadPool(numberOfThreads);
-
+            //this is a test comment as well
             Job [] jobs = new Job [numberOfJobs];
             for (int i = 0; i < numberOfJobs; i++) {
                 jobs[i] = new Job (i);
